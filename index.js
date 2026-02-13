@@ -61,12 +61,12 @@ let currentValueOTY = 0;
 /* ================================
    MQTT
 ================================ */
-const mqttUrl = 'wss://d4e6f442.ala.us-east-1.emqxsl.com:8084/mqtt';
+const mqttUrl = 'wss://d128f885.ala.us-east-1.emqxsl.com:8084/mqtt';
 
 const mqttOptions = {
   clientId: 'backend_' + Math.random().toString(16).substr(2, 8),
-  username: 'Olivas',
-  password: 'Jangel27'
+  username: 'Hola',
+  password: '12345'
 };
 
 const client = mqtt.connect(mqttUrl, mqttOptions);
@@ -200,3 +200,4 @@ app.get('/api/events', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en puerto ${PORT}`);
 });
+
